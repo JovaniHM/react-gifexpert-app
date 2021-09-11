@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face{
+  font-family: Rubik;
+  src: url(./assets/fonts/static/Rubik-Regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+
+body {
+  padding: 0px 20px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid grey;
+  color: grey;
+  font-size: 1rem;
+  padding: 7px 10px;
+  width: 100%;
+}
+
+.msg {
+  width: 100%;
+  text-align: center;
+}
+
+.card-box {
+  padding: 0px 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-grid {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  border: solid 1px #E2E0DF;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card {
+  border-radius: 6px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.card img {
+  border-radius: 5px;
+  max-height: 150px;
+}
+
+.card p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 0.8rem;
 }
